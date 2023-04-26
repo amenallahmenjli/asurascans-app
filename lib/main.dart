@@ -2,6 +2,7 @@ import 'package:asurascans_app/themes/dark.dart';
 import 'package:flutter/material.dart';
 
 import 'themes/light.dart';
+import 'widgets/animated_home_icon.dart';
 
 void main() {
   runApp(const MainApp());
@@ -20,10 +21,7 @@ class MainApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(),
         body: Center(
-          child: Text(
-            'Hello World!',
-            style: TextStyle(fontSize: 24),
-          ),
+          child: AnimatedHomeIcon(),
         ),
       ),
     );
